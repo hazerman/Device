@@ -47,7 +47,7 @@
 				<li class="inner-page-navigation-item"><a current-in-inner-page href="#">Моноподы для селфи</a></li>
 			</ul>
 		</div>
-		<div class="filters-and-sorting-wrapper">
+		<div class="filters-and-sorting-heading-wrapper">
 			<div class="w-container">
 				<h2 class="filters-heading">Фильтры:</h2>
 				<h2 class="sorting-heading">Сортировка:</h2>
@@ -60,6 +60,122 @@
 				</ul>
 			</div>
 		</div>
+		<div class="filters-and-catalog-wrapper">
+			<div class="w-container">
+				<form class="filters-form" action="https://echo.htmlacademy.ru" method="POST">
+					<fieldset class="filters-fieldset">
+						<legend>Стоимость</legend>
+						<div class="range-field">
+							<button class="range-btn" type="button"></button>
+							<div class="range-line"></div>
+							<div class="range-green-line"></div>
+							<button class="range-btn" type="button"></button>
+							<label for="min-price">от</label>
+							<input class="input-range" type="text" name="min-price" placeholder="0">
+							<label for="max-price">до</label>
+							<input class="input-range" type="text" name="max-price" placeholder="5000">
+						</div>
+					</fieldset>
+					<fieldset class="filters-fieldset">
+						<legend>Цвет</legend>
+						<div class="filter-color-wrapper">
+							<input class="visually-hidden" type="checkbox" name="color-black" id="color-black" checked>
+							<label for="color-black">Черный</label>
+							<input class="visually-hidden" type="checkbox" name="color-white" id="color-white">
+							<label for="color-white">Белый</label>
+							<input class="visually-hidden" type="checkbox" name="color-blue" id="color-blue" checked>
+							<label for="color-blue">Синий</label>
+							<input class="visually-hidden" type="checkbox" name="color-red" id="color-red" checked>
+							<label for="color-red">Красный</label>
+							<input class="visually-hidden" type="checkbox" name="color-pink" id="color-pink">
+							<label for="color-pink">Розовый</label>
+						</div>
+					</fieldset>
+					<fieldset class="filters-fieldset">
+						<legend>Bluetooth</legend>
+						<div class="filter-bluetooth-wrapper">
+							<input class="visually-hidden" type="radio" name="bluetooth-yes" id="bluetooth-yes" checked>
+							<label for="bluetooth-yes">Есть</label>
+							<input class="visually-hidden" type="radio" name="bluetooth-no" id="bluetooth-no">
+							<label for="bluetooth-no">Нет</label>
+						</div>
+					</fieldset>
+					<button class="button" type="submit">Показать</button>
+				</form>
+				<div class="catalog-and-pagination-wrapper">
+					<ul class="catalog-list">
+						<li class="catalog-item">
+							<img src="" alt="">
+							<h3>Любительская селфи-палка</h3>
+							<span class="catalog-price">500 руб.</span>
+							<div class="catalog-item-options">
+								<button class="button">В корзину</button>
+								<button class="goto-match">Добавить к сравнению</button>
+							</div>
+						</li>
+						<li class="catalog-item">
+							<img src="" alt="">
+							<h3>Профессиональная селфи-палка </h3>
+							<span class="catalog-price">1 500 руб.</span>
+							<div class="catalog-item-options">
+								<button class="button">В корзину</button>
+								<button class="goto-match">Добавить к сравнению</button>
+							</div>
+						</li>
+						<li class="catalog-item">
+							<img src="" alt="">
+							<h3>Непотопляемая селфи-палка</h3>
+							<span class="catalog-price">2 500 руб.</span>
+							<div class="catalog-item-options">
+								<button class="button">В корзину</button>
+								<button class="goto-match">Добавить к сравнению</button>
+							</div>
+						</li>
+						<li class="catalog-item">
+							<img src="" alt="">
+							<h3>Селфи-палка «Следуй за мной»</h3>
+							<span class="catalog-price">4 900 руб.</span>
+							<div class="catalog-item-options">
+								<button class="button">В корзину</button>
+								<button class="goto-match">Добавить к сравнению</button>
+							</div>
+						</li>
+					</ul>
+					<ul class="pagination-list">
+						<li class="pagination-list-item"><a href="#">Назад</a></li>
+						<li class="pagination-list-item"><a href="#">1</a></li>
+						<li class="pagination-list-item"><a href="#">2</a></li>
+						<li class="pagination-list-item"><a href="#">3</a></li>
+						<li class="pagination-list-item"><a href="#">Вперед</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</main>
+	<footer>
+		<div class="w-container">
+			<ul class="user-navigation-footer footer-nav-when-logged">
+				<li class="user-navigation-footer-item"><a class="footer-logo" href="#"><img src="" alt=""></a></li>
+				<li class="user-navigation-footer-item"><a class="profile-link profile-link-footer" href="#">Иван Одинцов</a></li>
+				<li class="user-navigation-footer-item"><a class="logout-link logout-link-footer" href="#">Выйти</a></li>
+				<li class="user-navigation-footer-item"><a href="#">Сравнить</a></li>
+				<li class="user-navigation-footer-item"><a href="#">Корзина</a></li>
+			</ul>
+			<address class="footer-address">г. Москва, ул. Строителей, 15</address>
+			<ul class="footer-services-list">
+				<li class="footer-services-list-item"><a href="#">Доставка</a></li>
+				<li class="footer-services-list-item"><a href="#">Гарантия</a></li>
+				<li class="footer-services-list-item"><a href="#">Контакты</a></li>
+			</ul>
+			<span class="tel-number-footer">Тел.: +7 (495) 495-95-95</span>
+			<span class="line-footer"></span>
+			<ul class="social-list">
+				<li class="social-list-item social-fb"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+				<li class="social-list-item social-in"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+				<li class="social-list-item social-tw"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+			</ul>
+			<a href="#"><span class="visually-hidden">HTMLAcademy</span></a>
+		</div>
+	</footer>
 </body>
 </html>
