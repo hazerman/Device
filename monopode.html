@@ -7,7 +7,7 @@
 <body>
 	<header class="main-header">
 		<div class="w-container">
-			<a class="header-logo" href="index.html"><img src="" alt="Логотип Device"></a>
+			<a class="header-logo" href="index.html"><img src="img/main-logo-header.svg" alt="Логотип Device"></a>
 			<nav class="main-navigation">
 				<form class="search-form" method="GET">
 					<input class="main-search" name="inpt-main-search" type="search" placeholder="Поиск по сайту">
@@ -73,9 +73,9 @@
 							<div class="range-green-line"></div>
 							<button class="range-btn" type="button"></button>
 							<label for="min-price">от</label>
-							<input class="input-range" type="text" name="min-price" placeholder="0">
+							<input class="input-range" type="text" name="min-price" id="min-price" placeholder="0">
 							<label for="max-price">до</label>
-							<input class="input-range" type="text" name="max-price" placeholder="5000">
+							<input class="input-range" type="text" name="max-price" id="max-price" placeholder="5000">
 						</div>
 					</fieldset>
 					<fieldset class="filters-fieldset">
@@ -108,8 +108,8 @@
 					<h2 class="visually-hidden">Каталог моноподов</h2>
 					<ul class="catalog-list">
 						<li class="catalog-item">
-							<img src="" alt="">
 							<h3 class="catalog-item-heading"><a href="#">Любительская селфи-палка</a></h3>
+							<img src="img/catalog-list-item-amateur.jpg" alt="Картинка любительской селфи-палки">
 							<span class="catalog-price">500 руб.</span>
 							<div class="catalog-item-options">
 								<button class="button">В корзину</button>
@@ -117,8 +117,8 @@
 							</div>
 						</li>
 						<li class="catalog-item">
-							<img src="" alt="">
 							<h3 class="catalog-item-heading"><a href="#">Профессиональная селфи-палка</a></h3>
+							<img src="img/catalog-list-item-pro.jpg" alt="Картинка профессиональной селфи-палки">
 							<span class="catalog-price">1 500 руб.</span>
 							<div class="catalog-item-options">
 								<button class="button">В корзину</button>
@@ -126,8 +126,8 @@
 							</div>
 						</li>
 						<li class="catalog-item">
-							<img src="" alt="">
 							<h3 class="catalog-item-heading"><a href="#">Непотопляемая селфи-палка</a></h3>
+							<img src="img/catalog-list-item-unsink.jpg" alt="Картинка непотопляемой селфи-палки">
 							<span class="catalog-price">2 500 руб.</span>
 							<div class="catalog-item-options">
 								<button class="button">В корзину</button>
@@ -135,8 +135,8 @@
 							</div>
 						</li>
 						<li class="catalog-item">
-							<img src="" alt="">
 							<h3 class="catalog-item-heading"><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+							<img src="img/catalog-list-item-follow.jpg" alt="Картинка селфи-палки Следуй за мной">
 							<span class="catalog-price">4 900 руб.</span>
 							<div class="catalog-item-options">
 								<button class="button">В корзину</button>
@@ -158,7 +158,7 @@
 	<footer>
 		<div class="w-container">
 			<ul class="user-navigation-footer footer-nav-when-logged">
-				<li class="user-navigation-footer-item"><a class="footer-logo" href="#"><img src="" alt=""></a></li>
+				<li class="user-navigation-footer-item"><a class="footer-logo" href="#"><img src="img/main-logo-footer.svg" alt="Логотип Device"></a></li>
 				<li class="user-navigation-footer-item"><a class="profile-link profile-link-footer" href="#">Иван Одинцов</a></li>
 				<li class="user-navigation-footer-item"><a class="logout-link logout-link-footer" href="#">Выйти</a></li>
 				<li class="user-navigation-footer-item"><a href="#">Сравнить</a></li>
@@ -177,7 +177,7 @@
 				<li class="social-list-item social-in"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
 				<li class="social-list-item social-tw"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
 			</ul>
-			<a href="#"><span class="visually-hidden">HTMLAcademy</span></a>
+			<a class="htmlacademy-link" href="#"><span class="visually-hidden">HTMLAcademy</span></a>
 		</div>
 	</footer>
 </body>
