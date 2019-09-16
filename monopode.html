@@ -80,27 +80,41 @@
 					</fieldset>
 					<fieldset class="filters-fieldset">
 						<legend>Цвет</legend>
-						<div class="filter-color-wrapper">
-							<input class="visually-hidden" type="checkbox" name="color-black" id="color-black" checked>
-							<label for="color-black">Черный</label>
-							<input class="visually-hidden" type="checkbox" name="color-white" id="color-white">
-							<label for="color-white">Белый</label>
-							<input class="visually-hidden" type="checkbox" name="color-blue" id="color-blue" checked>
-							<label for="color-blue">Синий</label>
-							<input class="visually-hidden" type="checkbox" name="color-red" id="color-red" checked>
-							<label for="color-red">Красный</label>
-							<input class="visually-hidden" type="checkbox" name="color-pink" id="color-pink">
-							<label for="color-pink">Розовый</label>
-						</div>
+						<ul class="filter-color-list">
+							<li class="filter-color-list-item">
+								<input class="visually-hidden" type="checkbox" name="color-black" id="color-black" checked>
+								<label for="color-black">Черный</label>
+							</li>
+							<li class="filter-color-list-item">
+								<input class="visually-hidden" type="checkbox" name="color-white" id="color-white">
+								<label for="color-white">Белый</label>
+							</li>
+							<li class="filter-color-list-item">
+								<input class="visually-hidden" type="checkbox" name="color-blue" id="color-blue" checked>
+								<label for="color-blue">Синий</label>
+							</li>
+							<li class="filter-color-list-item">
+								<input class="visually-hidden" type="checkbox" name="color-red" id="color-red" checked>
+								<label for="color-red">Красный</label>
+							</li>
+							<li class="filter-color-list-item">
+								<input class="visually-hidden" type="checkbox" name="color-pink" id="color-pink">
+								<label for="color-pink">Розовый</label>
+							</li>
+						</ul>
 					</fieldset>
 					<fieldset class="filters-fieldset">
 						<legend>Bluetooth</legend>
-						<div class="filter-bluetooth-wrapper">
-							<input class="visually-hidden" type="radio" name="bluetooth-yes" id="bluetooth-yes" checked>
-							<label for="bluetooth-yes">Есть</label>
-							<input class="visually-hidden" type="radio" name="bluetooth-no" id="bluetooth-no">
-							<label for="bluetooth-no">Нет</label>
-						</div>
+						<ul class="filter-bluetooth-list">
+							<li class="filter-bluetooth-list-item">
+								<input class="visually-hidden" type="radio" name="bluetooth-choose" id="bluetooth-yes" checked>
+								<label for="bluetooth-yes">Есть</label>
+							</li>
+							<li class="filter-bluetooth-list-item">
+								<input class="visually-hidden" type="radio" name="bluetooth-choose" id="bluetooth-no">
+								<label for="bluetooth-no">Нет</label>
+							</li>
+						</ul>
 					</fieldset>
 					<button class="button" type="submit">Показать</button>
 				</form>
