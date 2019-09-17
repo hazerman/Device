@@ -14,6 +14,10 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 
+	background-color: transparent;
+	border: none;
+
+	cursor: pointer;
 }
 
 .visually-hidden {
@@ -88,6 +92,10 @@ body {
 	text-decoration: none;
 }
 
+a.logout-link {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .site-navigation,
 .site-navigation-2nd-nesting {
 	margin: 0;
@@ -109,6 +117,14 @@ body {
 	line-height: 36px;
 	color: #000000;
 	text-decoration: none;
+}
+
+.page-heading {
+	margin: 0;
+	padding: 0;
+
+	font-size: 47px;
+	line-height: 48px;
 }
 
 .promo-slider-item-heading {
@@ -156,6 +172,23 @@ body {
 	line-height: 20px;
 }
 
+.inner-page-navigation {
+	margin: 50px;
+	padding: 0;
+
+	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+
+	list-style-image: url('../img/icon-nav-arrow.svg');
+}
+
+.inner-page-navigation a {
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+
 .category-list {
 	margin: 0;
 	padding: 0;
@@ -192,6 +225,110 @@ body {
 	line-height: 48px;
 }
 
+.filters-and-sorting-heading-wrapper {
+	background-image: linear-gradient(90deg, #dcdcdc 50%, #ebebeb 50%)
+}
+
+.filters-and-sorting-heading-wrapper h2 {
+	margin: 0;
+	padding: 0;
+
+	font-size: 16px;
+	line-height: 24px;
+
+	text-transform: uppercase;
+}
+
+.sorting-list {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+
+	list-style: none;
+}
+
+.sorting-list a[href] {
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+
+.filters-and-catalog-wrapper {
+	background-image: linear-gradient(90deg, #ebebeb 50%, #ffffff 50%)
+}
+
+.filters-form ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.filters-form legend {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.filters-form label {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.catalog-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.catalog-item-heading {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.catalog-item-heading a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.catalog-price {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.goto-match {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 36px;
+
+	background-color: transparent;
+	border: none;
+
+	cursor: pointer;
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+
+	font-size: 16px;
+	line-height: 24px;
+
+	list-style: none;
+}
+
+.pagination-list a {
+	color: #000000;
+	text-decoration: none;
+}
+
 .partners-list {
 	margin: 0;
 	padding: 0;
@@ -213,10 +350,95 @@ body {
 	background-color: #464646;
 }
 
+.user-navigation-footer {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
 .user-navigation-footer a {
 	line-height: 36px;
 
-	color: rgba(255, 255, 255, 0.7)
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-address,
+.tel-number-footer {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 30px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-services-list,
+.social-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.footer-services-list a {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.social-list-item a {
+	display: block;
+	width: 32px;
+	height: 32px;
+
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.social-fb a{
+	background-image: url('../img/icon-fb.svg');
+}
+
+.social-in a{
+	background-image: url('../img/icon-insta.svg');
+}
+
+.htmlacademy-link {
+	display: block;
+	width: 27px;
+	height: 34px;
+
+	background-image: url('../img/icon-html-academy.svg');
+	background-repeat: no-repeat;
+}
+
+.social-tw a{
+	background-image: url('../img/icon-tw.svg');
+}
+
+.write-us-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.write-us-list-item label {
+	font-style: 18px;
+	line-height: 24px;
+}
+
+.write-us-list-item input::placeholder,
+.write-us-list-item textarea::placeholder {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(70, 70, 70, 0.4);
 }
 
 @font-face {
@@ -236,7 +458,7 @@ body {
 	font-weight: 300;
 	font-style: normal;
 }
-
+/* Для теста без интернета
 @font-face {
 	font-family: 'Open Sans';
 	src:
@@ -251,4 +473,4 @@ body {
 		url('../fonts/OpenSans/OpenSansRegular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
-}
+} */
