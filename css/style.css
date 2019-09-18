@@ -10,6 +10,9 @@ body {
 
 	vertical-align: middle;
 
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
 	color: #000000;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -68,6 +71,7 @@ body {
 }
 
 .main-search::placeholder {
+	font: inherit;
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -75,6 +79,8 @@ body {
 	display: inline-block;
 
 	vertical-align: middle;
+
+	font: inherit;
 
 	background-color: transparent;
 	border: 2px solid #000000;
@@ -113,6 +119,8 @@ a.logout-link {
 }
 
 .site-navigation-2nd-nesting a {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
+	font-weight: 300;
 	font-size: 15px;
 	line-height: 36px;
 	color: #000000;
@@ -123,6 +131,7 @@ a.logout-link {
 	margin: 0;
 	padding: 0;
 
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
 }
@@ -131,6 +140,7 @@ a.logout-link {
 	margin: 0;
 	padding: 0;
 
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 56px;
 }
@@ -146,6 +156,7 @@ a.logout-link {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
+	color: #464646;
 }
 
 .promo-slider-item-features {
@@ -153,12 +164,12 @@ a.logout-link {
 	padding: 0;
 }
 
-.promo-slider-item-feature {
+.promo-slider-feature {
 	margin: 0;
 	padding: 0;
 
 	font-weight: 300;
-	font-style: 36px;
+	font-size: 36px;
 	line-height: 48px;
 }
 
@@ -168,8 +179,9 @@ a.logout-link {
 
 	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
 	font-weight: 300;
-	font-style: 13px;
+	font-size: 13px;
 	line-height: 20px;
+	color: #464646;
 }
 
 .inner-page-navigation {
@@ -221,6 +233,7 @@ a.logout-link {
 	margin: 0;
 	padding: 0;
 
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
 }
@@ -233,6 +246,7 @@ a.logout-link {
 	margin: 0;
 	padding: 0;
 
+	font-weight: 800;
 	font-size: 16px;
 	line-height: 24px;
 
@@ -287,6 +301,7 @@ a.logout-link {
 }
 
 .catalog-item-heading {
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -300,6 +315,7 @@ a.logout-link {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 24px;
+	color: #464646;
 }
 
 .goto-match {
@@ -324,9 +340,14 @@ a.logout-link {
 	list-style: none;
 }
 
+
 .pagination-list a {
 	color: #000000;
 	text-decoration: none;
+}
+
+.pagination-list-item:not(:first-child):not(:last-child) a[href] {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .partners-list {
@@ -428,16 +449,20 @@ a.logout-link {
 }
 
 .write-us-list-item label {
-	font-style: 18px;
+	font-size: 18px;
 	line-height: 24px;
 }
 
-.write-us-list-item input::placeholder,
-.write-us-list-item textarea::placeholder {
+.write-us-list-item input,
+.write-us-list-item textarea {
 	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
+}
+
+.write-us-list-item input::placeholder,
+.write-us-list-item textarea::placeholder {
 	color: rgba(70, 70, 70, 0.4);
 }
 
