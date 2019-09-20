@@ -1,3 +1,19 @@
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+.w-container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 body {
 	margin: 0;
 
@@ -42,7 +58,29 @@ body {
 }
 
 .main-header {
+	position: relative;
+
+	margin-top: 40px;
+	padding-top: 50px;
+
 	background-color: #f7e296;
+}
+
+.header-logo {
+	position: absolute;
+	left: 60px;
+	top: -19px;
+
+	width: 163px;
+	height: 35px;
+}
+
+.main-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1040px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .search-form,
@@ -55,6 +93,14 @@ body {
 	color: #000000;
 }
 
+.search-form {
+	position: relative;
+
+	display: flex;
+	width: 440px;
+	margin-right: auto;
+}
+
 .search-icon {
 	display: block;
 
@@ -62,31 +108,89 @@ body {
 	height: 16px;
 
 	background-image: url('../img/icon-search.svg');
+	background-repeat: no-repeat;
 
 	cursor: pointer;
 }
 
 .main-search {
+	align-self: flex-start;
+	flex-grow: 1;
+	margin-top: -8px;
+	padding: 0 20px;
+
+	font-size: 15px;
+	line-height: 30px;
+
 	border: none;
+	background-color: transparent;
+	opacity: 0.3;
 }
 
 .main-search::placeholder {
 	font: inherit;
-	color: rgba(0, 0, 0, 0.3);
+	color: #000000;
 }
 
 .btn-search {
-	display: inline-block;
+	display: none;
+	width: 85px;
+	margin-top: -20px;
+	padding: 8px;
 
 	vertical-align: middle;
 
 	font: inherit;
+	text-align: center;
 
 	background-color: transparent;
 	border: 2px solid #000000;
+
+	cursor: pointer;
+}
+
+.btn-search:hover {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.btn-search:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.main-search:hover {
+	opacity: 0.6;
+}
+
+.main-search:focus {
+	opacity: 1;
+	outline: none;
+}
+
+.main-search:focus + .btn-search {
+	display: inline-block;
+}
+
+.main-search:focus ~ .line-search {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+	width: 100%;
+	height: 2px;
+
+	background-color: #000000;
+}
+
+.main-search:focus::placeholder {
+	color: rgba(0, 0, 0, 0.6)
 }
 
 .user-navigation {
+	display: flex;
+	width: 500px;
 	margin: 0;
 	padding: 0;
 
@@ -100,6 +204,10 @@ body {
 
 a.logout-link {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation {
+	width: 100%;
 }
 
 .site-navigation,
@@ -483,7 +591,7 @@ a.logout-link {
 	font-weight: 300;
 	font-style: normal;
 }
-/* Для теста без интернета
+/* Для теста без интернета */
 @font-face {
 	font-family: 'Open Sans';
 	src:
@@ -498,4 +606,4 @@ a.logout-link {
 		url('../fonts/OpenSans/OpenSansRegular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
-} */
+}
