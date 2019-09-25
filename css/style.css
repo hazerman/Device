@@ -937,10 +937,17 @@ a.logout-link {
 	background-color: #464646;
 }
 
+.main-footer .w-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .user-navigation-footer {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
 	margin: 0;
+	margin-bottom: 33px;
 	padding: 0;
 
 	list-style: none;
@@ -993,6 +1000,14 @@ a.logout-link {
 	opacity: 0.6;
 }
 
+.footer-middle-area,
+.footer-bottom-area {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 65px;
+}
+
 .footer-address,
 .tel-number-footer {
 	font-family: 'Open Sans', 'Arial', 'Helvetica', "Arial Narrow", sans-serif;
@@ -1005,10 +1020,27 @@ a.logout-link {
 
 .footer-services-list,
 .social-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
 
 	list-style: none;
+}
+
+.footer-services-list {
+	max-width: 560px;
+}
+
+.footer-services-list-item {
+	margin-right: 38px;
+}
+
+.footer-services-list-item:last-child {
+	margin-right: 0;
 }
 
 .footer-services-list a {
@@ -1016,6 +1048,30 @@ a.logout-link {
 	line-height: 24px;
 	color: #ffffff;
 	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.footer-services-list a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-services-list a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.line-footer {
+	display: block;
+	width: 80px;
+	height: 7px;
+	margin-top: 15px;
+
+	background-color: #ffc600;
+}
+
+.social-list {
+	width: 141px;
+	justify-content: space-between;
 }
 
 .social-list-item a {
@@ -1026,6 +1082,14 @@ a.logout-link {
 	border-radius: 50%;
 	background-repeat: no-repeat;
 	opacity: 0.3;
+}
+
+.social-list-item a:hover {
+	opacity: 0.6;
+}
+
+.social-list-item a:active {
+	opacity: 0.1;
 }
 
 .social-fb a{
@@ -1044,6 +1108,15 @@ a.logout-link {
 	background-image: url('../img/icon-html-academy.svg');
 	background-repeat: no-repeat;
 }
+
+.htmlacademy-link:hover {
+	opacity: 0.6;
+}
+
+.htmlacademy-link:active {
+	opacity: 0.3;
+}
+
 
 .social-tw a{
 	background-image: url('../img/icon-tw.svg');
