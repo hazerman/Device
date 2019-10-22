@@ -779,12 +779,12 @@ a.logout-link {
 }
 
 .services-slide {
+	flex-grow: 1;
 	display: none;
-	width: 100%;
 	padding-top: 75px;
 
 	background-repeat: no-repeat;
-	background-position: top 85px right 180px;
+	background-position: top 85px right 60px;
 }
 
 .show-services-slide {
@@ -1308,12 +1308,24 @@ h2.sorting-heading {
 
 .partners-list {
 	display: flex;
-	flex-wrap: wpap;
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
+}
+
+.partners-list-item a {
+	display: block;
+
+	opacity: 0.2;
+	filter: grayscale(100%);
+}
+
+.partners-list-item a:hover {
+	opacity: 1;
+	filter: none;
 }
 
 .about-and-contacts-wrapper {
@@ -1359,8 +1371,8 @@ h2.sorting-heading {
 
 .delivery-companies-list {
 	margin: 0;
-	margin-bottom: 65px;
-	padding: 0;	
+	margin-bottom: 35px;
+	padding: 0;
 
 	font-size: 16px;
 	line-height: 40px;
@@ -1388,10 +1400,18 @@ h2.sorting-heading {
 	border-radius: 50%;
 }
 
+.about-and-contacts-wrapper .button {
+	min-width: 260px;
+}
+
 .map-btn {
-	display: block;
+	display: flex;
 
 	margin-bottom: 65px;
+}
+
+.map-btn:hover {
+	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-footer {
@@ -1587,14 +1607,13 @@ h2.sorting-heading {
 
 .popup-write-us {
 	position: fixed;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	z-index: 1200;
 
 	display: none;
 	width: 960px;
 	min-height: 550px;
-	margin-top: -380px;
 	margin-left: -480px;
 	padding: 90px 100px;
 
@@ -1674,21 +1693,40 @@ h2.sorting-heading {
 
 .popup-map {
 	position: fixed;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	z-index: 1201;
 
 	display: none;
 	width: 960px;
 	height: 550px;
-	margin-top: -380px;
 	margin-left: -480px;
+
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.popup-map p {
+	position: relative;
+	z-index: 1;
+
+	margin: 0;
+	padding: 0;
+}
+
+.popup-map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	border: none;
 }
 
 .close-btn {
 	position: absolute;
 	top: 22px;
 	right: 22px;
+	z-index: 3;
 
 	padding: 0;
 	margin: 0;
@@ -1734,11 +1772,29 @@ h2.sorting-heading {
 
 .show-popup {
 	display: block;
+	animation: appear 800ms;
+}
+
+.popup-error {
+	animation: shake 600ms;
 }
 
 [class*='current-in'] {
 	pointer-events: none;
 	cursor: default;
+}
+
+@keyframes shake {
+	0%, 100% { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+	20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+@keyframes appear {
+	0% { transform: translateY(-2000px); }
+	60% { transform: translateY(100px); }
+	80% { transform: translateY(-20px); }
+	100% { transform: translateY(0); }
 }
 
 @font-face {
@@ -1748,6 +1804,7 @@ h2.sorting-heading {
 		url('../fonts/Gilroy/GilroyExtraBold.woff') format('woff');
 	font-weight: 800;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -1757,20 +1814,5 @@ h2.sorting-heading {
 		url('../fonts/Gilroy/GilroyLight.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
-}
-/* Для теста без интернета */
-@font-face {
-	font-family: 'Open Sans';
-	src:
-		url('../fonts/OpenSans/OpenSansLight.woff2') format('woff2');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	src:
-		url('../fonts/OpenSans/OpenSansRegular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
+	font-display: swap;
 }
